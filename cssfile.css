@@ -2,33 +2,29 @@
     box-sizing: border-box;
 }
 h1{
-    margin-bottom: 45px;
-    text:175%;
-    text-align: center;
+    margin-bottom: 20px;
+    font-size:175%;
     font-family: cursive, serif;
-
 }
 .ptext{
-    margin-top: 50px;
-    text: 100%;
+    margin: 0px;
+    font-size: 100%;
     font-family: cursive, serif;
     color:black;
     padding: 10px;
 }
 .psubtittle{
-    text:125%;
+    font-size:125%;
     font-family:cursive, serif;
     font-weight: bold;
     font-size: 1em;
+    color: black;
 }
 .subtittle_box{
-    width: 30%;
+    width: 100%;
     text-align: center;
-    float: right;
     padding: 0;
     margin: 0;
-    border: 1px solid black;
-
 }
 .chicken_color{
     background-color: pink;
@@ -53,45 +49,16 @@ h1{
     background-color: gray;
 }
 @media (min-width: 0px) and (max-width:767px){
-    .col_sml_1, .col_sml_2 ,.col_sml_3{
-        float: left;
-    }
-    .col_sml_1{
-        width: 100%;
-    }
-    .col_sml_2 {
-        width: 100%;
-    }
-    .col_sml_3{
-        width: 100%;
-    }
+
 }
 @media (min-width: 768px) and (max-width:991px) {
-    .col_md_1, .col_md_2 ,.col_md_3{
-        float: left;
-    }
-    .col_md_1{
-        width: 50%;
-    }
-    .col_md_2 {
-        width: 50%;
-    }
-    .col_md_3{
+    .container{
         width: 100%;
     }
 }
 @media (min-width: 922px) {
-    .col_lg_1, .col_lg_2 ,.col_lg_3{
-        float: left;
-    }
-    .col_lg_1{
-        width: 33%;
-    }
-    .col_lg_2 {
-        width: 33%;
-    }
-    .col_lg_3{
-        width: 33%;
+    .container{
+        width: 100%;
     }
 }
 
@@ -100,4 +67,51 @@ h1{
     padding: 5px;
     width: 100%;
     position: relative;
+}
+
+#header-nav {
+    background-color: gray;
+    border-radius: 0;
+    border: 0;
+}
+
+.navbar-brand h1 { /* Restaurant name */
+    font-family: cursive, serif;
+    color: black;
+        font-size: 1.5em;
+        font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 20px;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+    text-decoration: none;
+}
+
+.navbar-brand p span { /* Star-K */
+    vertical-align: middle;
+}
+
+#nav-list a {
+    margin: 0px;
+    background-color: gray;
+    color: black;
+    text-align: center;
+}
+#nav-list a:hover {
+    background: black;
+    color: white;
+}
+#nav-list a span {
+    font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+    border: 2px solid black;
+}
+.navbar-header button.navbar-toggle {
+    clear: both;
+    margin-top: -40px;
 }
